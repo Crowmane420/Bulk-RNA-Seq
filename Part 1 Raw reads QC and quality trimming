@@ -1,0 +1,12 @@
+# To replicate the following workflow Linux is a requirement. All the following actions were executed in Pop!_OS 22.04 LTS.
+
+# In this experiment we are working with a set of 12 samples which is spread across two tissue types (Root and Shoot), collected at time points 4, 8, and 16. 
+# The Samples are further divided based on their condition (Control and Treatment) with each sample being in treplicates.
+# View the metadata file for the detailed information.
+
+# The first step with Raw reads is to check for their quality, we will be focusing on Phread score, duplication levels and adapter contamination for the most part.
+# Aside from the abovementioned parameters we can also confirm the read length of our reads as well as GC percentage by doing QC.
+
+# The common QC-tool for short reads are FastQC.
+# We provide .fastq files as input for FastQC and it will generate a .html QC report for our .fastq file.
+# FastQC can be obtained by either downading the java tool from https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ which requires a suitable Java Runtime Environment (https://adoptium.net/).
